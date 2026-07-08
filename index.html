@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Urtubia Clima — Aire, refrigeración y línea blanca en Santiago | +30 años de oficio</title>
+<meta name="description" content="Don Manuel Urtubia: más de 30 años y +1000 clientes en climatización, refrigeración y línea blanca. Atención personal a domicilio en Santiago.">
+<meta name="keywords" content="servicio técnico aire acondicionado Santiago, reparación refrigerador, técnico lavadora, refrigeración comercial, carga de gas, refrigeración camiones, limpieza a vapor">
+<meta property="og:title" content="Urtubia Clima — La experiencia no se improvisa">
+<meta property="og:description" content="Más de 30 años y +1000 clientes. Don Manuel atiende personalmente su caso.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Barlow+Semi+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--marino:#0B1F3A;--marino-900:#081729;--marino-800:#0E2748;--hielo:#2E9BD6;--hielo-claro:#5EC5E8;--hielo-pal:#D6EEF8;--acero:#8FA6BC;--humo:#F4F8FB;--blanco:#FFFFFF;--verde:#25D366;--linea:rgba(46,155,214,0.18);--sombra:0 20px 60px -20px rgba(11,31,58,0.35);--radio:18px}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Sora',system-ui,sans-serif;color:var(--marino);background:var(--blanco);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3,h4{line-height:1.1;font-weight:700;letter-spacing:-0.02em}
+  a{text-decoration:none;color:inherit}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  .eyebrow{font-family:'Barlow Semi Condensed',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:0.78rem;font-weight:600;color:var(--hielo)}
+  header{position:fixed;top:0;left:0;right:0;z-index:100;background:transparent;transition:.4s;padding:16px 0}
+  header.scrolled{background:rgba(8,23,41,0.94);backdrop-filter:blur(12px);box-shadow:0 8px 30px -12px rgba(0,0,0,0.4);padding:10px 0}
+  .nav{display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand img{height:42px;filter:drop-shadow(0 2px 8px rgba(0,0,0,0.3))}
+  .brand-text{display:flex;flex-direction:column;line-height:1}
+  .brand-text .n{color:#fff;font-weight:700;font-size:1.02rem}
+  .brand-text .s{color:var(--hielo-claro);font-family:'Barlow Semi Condensed',sans-serif;font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;margin-top:2px}
+  .nav-links{display:flex;align-items:center;gap:30px}
+  .nav-links a{color:rgba(255,255,255,0.82);font-size:0.9rem;transition:.2s}
+  .nav-links a:hover{color:var(--hielo-claro)}
+  .nav-cta{background:var(--hielo);color:#fff!important;padding:9px 20px;border-radius:100px;font-weight:600;box-shadow:0 8px 24px -8px rgba(46,155,214,0.6);transition:.2s}
+  .nav-cta:hover{transform:translateY(-2px)}
+  .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+  .burger span{width:26px;height:2px;background:#fff;border-radius:2px;transition:.3s}
+  .hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:110px 0 60px;background:radial-gradient(1200px 600px at 80% 20%,rgba(46,155,214,0.22),transparent 60%),linear-gradient(160deg,var(--marino-900) 0%,var(--marino) 55%,var(--marino-800) 100%);overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:50px;align-items:center;position:relative;z-index:3}
+  .hero-left{color:#fff}
+  .hero .eyebrow{margin-bottom:20px;display:flex;align-items:center;gap:12px}
+  .hero .eyebrow::before{content:"";width:38px;height:1px;background:var(--hielo)}
+  .hero h1{font-size:clamp(2.5rem,5.2vw,4rem);font-weight:800;letter-spacing:-0.03em;margin-bottom:22px}
+  .hero h1 .glow{background:linear-gradient(120deg,var(--hielo-claro),var(--hielo-pal));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p.lead{font-size:clamp(1rem,1.5vw,1.18rem);color:rgba(214,238,248,0.85);max-width:500px;margin-bottom:32px;font-weight:300}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:38px}
+  .btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:100px;font-weight:600;font-size:0.95rem;transition:.2s;cursor:pointer;border:none}
+  .btn-primary{background:var(--hielo);color:#fff;box-shadow:0 14px 34px -12px rgba(46,155,214,0.7)}
+  .btn-primary:hover{transform:translateY(-3px);color:#fff}
+  .btn-ghost{background:rgba(255,255,255,0.08);color:#fff;border:1px solid rgba(255,255,255,0.2)}
+  .btn-ghost:hover{background:rgba(255,255,255,0.16);transform:translateY(-3px);color:#fff}
+  .btn svg{width:18px;height:18px}
+  .hero-stats{display:flex;gap:30px;flex-wrap:wrap}
+  .stat .num{font-size:2.2rem;font-weight:800;color:#fff;line-height:1}
+  .stat .num span{color:var(--hielo-claro)}
+  .stat .lbl{font-family:'Barlow Semi Condensed',sans-serif;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--acero);margin-top:5px}
+  .hero-photo{position:relative;display:flex;justify-content:center;align-items:center}
+  .photo-frame{position:relative;border-radius:24px;overflow:hidden;box-shadow:0 30px 70px -20px rgba(0,0,0,0.6);border:1px solid rgba(94,197,232,0.25);max-width:440px}
+  .photo-frame img{width:100%;display:block}
+  .photo-frame::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(8,23,41,0.55))}
+  .photo-badge{position:absolute;bottom:18px;left:18px;right:18px;z-index:3;display:flex;align-items:center;gap:12px;background:rgba(8,23,41,0.72);backdrop-filter:blur(8px);border:1px solid rgba(94,197,232,0.25);border-radius:14px;padding:12px 16px}
+  .photo-badge .pav{width:44px;height:44px;border-radius:50%;background:linear-gradient(140deg,var(--hielo),var(--hielo-claro));display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--marino-900);flex-shrink:0}
+  .photo-badge .pn{color:#fff;font-weight:600;font-size:0.95rem;line-height:1.2}
+  .photo-badge .ps{color:var(--hielo-claro);font-size:0.78rem;font-family:'Barlow Semi Condensed',sans-serif;letter-spacing:0.06em}
+  .float-chip{position:absolute;background:rgba(255,255,255,0.95);border-radius:12px;padding:10px 14px;box-shadow:0 12px 30px -10px rgba(0,0,0,0.4);display:flex;align-items:center;gap:9px;font-size:0.82rem;font-weight:600;color:var(--marino);animation:floaty 4s ease-in-out infinite}
+  .float-chip svg{width:18px;height:18px;color:var(--hielo)}
+  .float-chip.c1{top:14px;right:-18px}
+  .float-chip.c2{bottom:90px;left:-26px;animation-delay:1.5s}
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  .wind{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:1;overflow:hidden}
+  .wind span{position:absolute;height:2px;background:linear-gradient(90deg,transparent,rgba(214,238,248,0.5),transparent);border-radius:2px;animation:windmove linear infinite}
+  @keyframes windmove{0%{transform:translateX(-30vw);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateX(130vw);opacity:0}}
+  .flake{position:absolute;color:rgba(94,197,232,0.4);pointer-events:none;animation:drift linear infinite;z-index:1}
+  @keyframes drift{0%{transform:translateY(-10vh) rotate(0);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateY(110vh) rotate(360deg);opacity:0}}
+  .marcas{background:var(--marino-900);padding:30px 0;border-top:1px solid rgba(94,197,232,0.1);overflow:hidden}
+  .marcas-head{text-align:center;color:var(--acero);font-family:'Barlow Semi Condensed',sans-serif;text-transform:uppercase;letter-spacing:0.2em;font-size:0.78rem;margin-bottom:18px}
+  .marquee{display:flex;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+  .marquee-track{display:flex;gap:44px;animation:scrollx 34s linear infinite;white-space:nowrap;padding-right:44px}
+  @keyframes scrollx{to{transform:translateX(-50%)}}
+  .marca-item{color:rgba(214,238,248,0.65);font-weight:600;font-size:1.05rem;flex-shrink:0}
+  .marquee:hover .marquee-track{animation-play-state:paused}
+  section{position:relative}
+  .sec-head{max-width:660px;margin-bottom:48px}
+  .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .sec-head h2{font-size:clamp(1.9rem,3.4vw,2.7rem);margin:14px 0 16px;color:var(--marino)}
+  .sec-head p{color:#4a5c70;font-size:1.05rem;font-weight:300}
+  .asistente{padding:90px 0;background:linear-gradient(160deg,var(--marino-900),var(--marino));color:#fff;position:relative;overflow:hidden}
+  .asistente::before{content:"";position:absolute;top:-30%;left:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(46,155,214,0.16),transparent 65%);pointer-events:none}
+  .asis-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:50px;align-items:center;position:relative;z-index:2}
+  .asis-intro .eyebrow{color:var(--hielo-claro)}
+  .asis-intro h2{font-size:clamp(1.9rem,3.4vw,2.6rem);color:#fff;margin:14px 0 18px}
+  .asis-intro p{color:rgba(214,238,248,0.82);font-weight:300;margin-bottom:24px}
+  .asis-intro .mini-feats{display:flex;flex-direction:column;gap:14px}
+  .asis-intro .mf{display:flex;gap:12px;align-items:flex-start;font-size:0.95rem;color:rgba(214,238,248,0.9)}
+  .asis-intro .mf svg{width:22px;height:22px;color:var(--hielo-claro);flex-shrink:0;margin-top:2px}
+  .chat-box{background:rgba(255,255,255,0.05);border:1px solid rgba(94,197,232,0.25);border-radius:24px;overflow:hidden;box-shadow:0 30px 70px -20px rgba(0,0,0,0.5);backdrop-filter:blur(10px)}
+  .chat-top{display:flex;align-items:center;gap:12px;padding:18px 22px;background:rgba(8,23,41,0.6);border-bottom:1px solid rgba(94,197,232,0.15)}
+  .chat-avatar{width:46px;height:46px;border-radius:50%;background:linear-gradient(140deg,var(--hielo),var(--hielo-claro));display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0}
+  .chat-avatar svg{width:26px;height:26px;color:#fff}
+  .chat-avatar .dot{position:absolute;bottom:2px;right:2px;width:11px;height:11px;background:var(--verde);border-radius:50%;border:2px solid var(--marino-900);animation:blink 2s ease infinite}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:0.4}}
+  .chat-top .ct-name{font-weight:600;color:#fff;font-size:1rem}
+  .chat-top .ct-status{font-size:0.78rem;color:var(--hielo-claro);font-family:'Barlow Semi Condensed',sans-serif}
+  .chat-body{padding:22px;height:340px;overflow-y:auto;display:flex;flex-direction:column;gap:14px;scroll-behavior:smooth}
+  .chat-body::-webkit-scrollbar{width:6px}
+  .chat-body::-webkit-scrollbar-thumb{background:rgba(94,197,232,0.3);border-radius:3px}
+  .msg{max-width:82%;padding:12px 16px;border-radius:16px;font-size:0.93rem;line-height:1.5;animation:msgin .35s ease}
+  @keyframes msgin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .msg.bot{background:rgba(255,255,255,0.08);color:#eaf4fa;align-self:flex-start;border-bottom-left-radius:4px}
+  .msg.user{background:var(--hielo);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
+  .msg.bot strong{color:var(--hielo-claro)}
+  .typing{display:flex;gap:4px;padding:14px 16px;align-self:flex-start}
+  .typing span{width:8px;height:8px;background:var(--hielo-claro);border-radius:50%;animation:typing 1.2s infinite}
+  .typing span:nth-child(2){animation-delay:.2s}.typing span:nth-child(3){animation-delay:.4s}
+  @keyframes typing{0%,60%,100%{transform:translateY(0);opacity:.5}30%{transform:translateY(-6px);opacity:1}}
+  .chat-options{display:flex;flex-wrap:wrap;gap:8px;padding:0 22px 16px}
+  .chip-opt{background:rgba(94,197,232,0.12);border:1px solid rgba(94,197,232,0.35);color:#eaf4fa;padding:9px 15px;border-radius:100px;font-size:0.86rem;cursor:pointer;transition:.2s;font-family:inherit}
+  .chip-opt:hover{background:var(--hielo);border-color:var(--hielo);color:#fff;transform:translateY(-2px)}
+  .chat-input-row{display:flex;gap:10px;padding:16px 22px;border-top:1px solid rgba(94,197,232,0.15);background:rgba(8,23,41,0.4)}
+  .chat-input-row input{flex:1;background:rgba(255,255,255,0.08);border:1px solid rgba(94,197,232,0.25);border-radius:100px;padding:12px 18px;color:#fff;font-family:inherit;font-size:0.92rem;outline:none}
+  .chat-input-row input::placeholder{color:rgba(214,238,248,0.5)}
+  .chat-input-row input:focus{border-color:var(--hielo-claro)}
+  .chat-send{width:46px;height:46px;border-radius:50%;background:var(--hielo);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:.2s}
+  .chat-send:hover{transform:scale(1.08)}
+  .chat-send svg{width:20px;height:20px;color:#fff}
+  .servicios{padding:90px 0;background:#fff}
+  .serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .serv{padding:30px 26px;border-radius:var(--radio);background:var(--humo);border:1px solid var(--linea);transition:.3s;position:relative;overflow:hidden}
+  .serv::before{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,var(--hielo),var(--hielo-claro));transform:scaleX(0);transform-origin:left;transition:transform .35s}
+  .serv:hover{transform:translateY(-6px);box-shadow:var(--sombra)}
+  .serv:hover::before{transform:scaleX(1)}
+  .serv-ico{width:58px;height:58px;border-radius:15px;background:linear-gradient(140deg,var(--hielo),var(--marino));display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+  .serv-ico svg{width:30px;height:30px;color:#fff}
+  .serv h3{font-size:1.16rem;margin-bottom:8px;color:var(--marino)}
+  .serv p{color:#586a7e;font-size:0.94rem;font-weight:300}
+  .serv .tags{margin-top:12px;display:flex;flex-wrap:wrap;gap:7px}
+  .serv .tag{font-size:0.76rem;background:rgba(46,155,214,0.1);color:var(--hielo);padding:4px 11px;border-radius:100px;font-family:'Barlow Semi Condensed',sans-serif;font-weight:600}
+  .confianza{padding:90px 0;background:var(--humo);overflow:hidden}
+  .conf-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .conf-photo{position:relative;border-radius:24px;overflow:hidden;box-shadow:var(--sombra);border:1px solid var(--linea)}
+  .conf-photo img{width:100%;display:block}
+  .conf-text .eyebrow{margin-bottom:14px;display:block}
+  .conf-text h2{font-size:clamp(1.9rem,3.4vw,2.6rem);margin-bottom:20px;color:var(--marino)}
+  .conf-text p{color:#4a5c70;font-size:1.04rem;margin-bottom:18px;font-weight:300}
+  .conf-text p strong{color:var(--marino);font-weight:600}
+  .conf-nums{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+  .cnum{text-align:center;padding:18px 10px;background:#fff;border-radius:14px;border:1px solid var(--linea)}
+  .cnum .cn{font-size:1.9rem;font-weight:800;color:var(--hielo);line-height:1}
+  .cnum .cl{font-size:0.78rem;color:#6a7d90;font-family:'Barlow Semi Condensed',sans-serif;text-transform:uppercase;letter-spacing:0.08em;margin-top:6px}
+  .extra{padding:90px 0;background:linear-gradient(160deg,var(--marino-900),var(--marino));color:#fff;position:relative;overflow:hidden}
+  .extra::after{content:"";position:absolute;bottom:-30%;right:-8%;width:500px;height:500px;background:radial-gradient(circle,rgba(46,155,214,0.15),transparent 65%);pointer-events:none}
+  .extra .sec-head h2{color:#fff}
+  .extra .sec-head p{color:rgba(214,238,248,0.8)}
+  .extra-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;position:relative;z-index:2}
+  .xcard{background:rgba(255,255,255,0.04);border:1px solid rgba(94,197,232,0.2);border-radius:14px;padding:24px 22px;transition:.3s;display:flex;gap:14px;align-items:flex-start}
+  .xcard:hover{background:rgba(255,255,255,0.08);border-color:var(--hielo-claro);transform:translateY(-4px)}
+  .xcard svg{width:26px;height:26px;color:var(--hielo-claro);flex-shrink:0;margin-top:2px}
+  .xcard h3{font-size:1.02rem;color:#fff;margin-bottom:5px}
+  .xcard p{font-size:0.86rem;color:rgba(214,238,248,0.7);font-weight:300}
+  .extra-cta{text-align:center;margin-top:36px;position:relative;z-index:2}
+  .cta-final{padding:90px 0;background:#fff}
+  .cta-box{background:linear-gradient(140deg,var(--marino-900),var(--marino) 60%,var(--hielo));border-radius:28px;padding:60px 44px;text-align:center;color:#fff;position:relative;overflow:hidden;box-shadow:var(--sombra)}
+  .cta-box::before{content:"";position:absolute;top:-50%;left:-10%;width:400px;height:400px;background:radial-gradient(circle,rgba(255,255,255,0.12),transparent 60%)}
+  .cta-box h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:14px;position:relative;z-index:2}
+  .cta-box p{font-size:1.1rem;color:rgba(255,255,255,0.85);max-width:520px;margin:0 auto 30px;font-weight:300;position:relative;z-index:2}
+  .cta-box .hero-cta{justify-content:center;position:relative;z-index:2}
+  .btn-white{background:#fff;color:var(--marino)}
+  .btn-white:hover{background:var(--hielo-pal);transform:translateY(-3px);color:var(--marino)}
+  .contacto-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:26px;position:relative;z-index:2}
+  .cchip{display:flex;align-items:center;gap:9px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);border-radius:100px;padding:10px 18px;font-size:0.9rem;color:#fff;transition:.2s}
+  .cchip:hover{background:rgba(255,255,255,0.22);color:#fff}
+  .cchip svg{width:17px;height:17px}
+  footer{background:var(--marino-900);color:rgba(214,238,248,0.7);padding:56px 0 26px}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:36px}
+  .foot-brand img{height:56px;margin-bottom:16px}
+  .foot-brand p{font-size:0.9rem;font-weight:300;max-width:280px;margin-bottom:16px}
+  .foot-col h4{color:#fff;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.16em;font-family:'Barlow Semi Condensed',sans-serif;margin-bottom:16px}
+  .foot-col a,.foot-col p{display:block;color:rgba(214,238,248,0.7);font-size:0.92rem;margin-bottom:9px;font-weight:300;transition:.2s}
+  .foot-col a:hover{color:var(--hielo-claro)}
+  .ico-line{display:flex;align-items:center;gap:10px}
+  .ico-line svg{width:16px;height:16px;color:var(--hielo-claro);flex-shrink:0}
+  .socials{display:flex;gap:12px}
+  .socials a{width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,0.06);border:1px solid rgba(94,197,232,0.2);display:flex;align-items:center;justify-content:center;transition:.2s;margin-bottom:0}
+  .socials a:hover{background:var(--hielo);border-color:var(--hielo);transform:translateY(-3px)}
+  .socials svg{width:19px;height:19px;color:#fff}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,0.08);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:0.82rem;color:rgba(214,238,248,0.5)}
+  .wsp-float{position:fixed;bottom:24px;right:24px;z-index:200;width:60px;height:60px;border-radius:50%;background:var(--verde);display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px -8px rgba(37,211,102,0.6);transition:.25s;animation:bob 3s ease-in-out infinite}
+  .wsp-float:hover{transform:scale(1.1)}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+  .wsp-float svg{width:33px;height:33px;color:#fff}
+  .reveal{opacity:0;transform:translateY(30px);transition:.7s}
+  .reveal.in{opacity:1;transform:none}
+  @media(max-width:960px){
+    .hero-grid{grid-template-columns:1fr;gap:40px;text-align:center}
+    .hero .eyebrow{justify-content:center}
+    .hero p.lead{margin-left:auto;margin-right:auto}
+    .hero-cta,.hero-stats{justify-content:center}
+    .hero-photo{order:-1}
+    .asis-grid,.conf-grid{grid-template-columns:1fr;gap:36px}
+    .serv-grid,.extra-grid{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr;gap:28px}
+    .float-chip{display:none}
+  }
+  @media(max-width:720px){
+    .nav-links{position:fixed;top:0;right:-100%;height:100vh;width:78%;max-width:320px;background:var(--marino-900);flex-direction:column;justify-content:center;gap:24px;transition:right .35s;box-shadow:-20px 0 60px rgba(0,0,0,0.4)}
+    .nav-links.open{right:0}
+    .nav-links a{font-size:1.1rem}
+    .burger{display:flex;z-index:110}
+    .burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+    .burger.open span:nth-child(2){opacity:0}
+    .burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+    .conf-nums{grid-template-columns:1fr 1fr}
+    .cta-box{padding:44px 24px}
+  }
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="wrap nav">
+    <a href="#inicio" class="brand">
+      <img src="uc.png" alt="Urtubia Clima">
+      <div class="brand-text"><span class="n">Urtubia Clima</span><span class="s">Climatización · Refrigeración</span></div>
+    </a>
+    <nav class="nav-links" id="navlinks">
+      <a href="#asistente">Asistente</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#confianza">Nosotros</a>
+      <a href="#extra">Más servicios</a>
+      <a href="https://wa.me/56967149945?text=Hola%20Urtubia%20Clima,%20necesito%20una%20cotización" class="nav-cta">Cotizar</a>
+    </nav>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="wind" id="wind"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-left">
+      <div class="eyebrow reveal">Atención personal · Santiago</div>
+      <h1 class="reveal">La experiencia<br>no se <span class="glow">improvisa</span>.</h1>
+      <p class="lead reveal">Don Manuel lleva más de 30 años y +1.000 clientes reparando aire, refrigeración y línea blanca. Cuando un equipo falla y nadie sabe por qué, él sí sabe. Y le habla claro.</p>
+      <div class="hero-cta reveal">
+        <a href="#asistente" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+          Diagnostica tu equipo
+        </a>
+        <a href="https://wa.me/56967149945?text=Hola%20Urtubia%20Clima,%20necesito%20servicio%20a%20domicilio" class="btn btn-ghost">WhatsApp directo</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><div class="num">+30<span> años</span></div><div class="lbl">De oficio</div></div>
+        <div class="stat"><div class="num">+1.000<span></span></div><div class="lbl">Clientes atendidos</div></div>
+        <div class="stat"><div class="num">100%<span></span></div><div class="lbl">Atención personal</div></div>
+      </div>
+    </div>
+    <div class="hero-photo reveal">
+      <div class="photo-frame">
+        <img src="manuel_confianza.png" alt="Don Manuel Urtubia trabajando en un refrigerador">
+        <div class="photo-badge">
+          <div class="pav">M</div>
+          <div><div class="pn">Don Manuel Urtubia</div><div class="ps">Técnico · Atiende personalmente</div></div>
+        </div>
+      </div>
+      <div class="float-chip c1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Diagnóstico certero</div>
+      <div class="float-chip c2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Respuesta rápida</div>
+    </div>
+  </div>
+</section>
+
+<div class="marcas">
+  <div class="marcas-head">Trabaja y repara todas las marcas y sistemas</div>
+  <div class="marquee">
+    <div class="marquee-track" id="mtrack">
+      <span class="marca-item">Samsung</span><span class="marca-item">LG</span><span class="marca-item">Midea</span><span class="marca-item">Daikin</span><span class="marca-item">Mitsubishi Electric</span><span class="marca-item">Fujitsu</span><span class="marca-item">Carrier</span><span class="marca-item">York</span><span class="marca-item">Anwo</span><span class="marca-item">General Electric</span><span class="marca-item">Whirlpool</span><span class="marca-item">Mabe</span><span class="marca-item">Bosch</span><span class="marca-item">Electrolux</span><span class="marca-item">Fensa</span><span class="marca-item">Mademsa</span><span class="marca-item">Sindelen</span><span class="marca-item">Panasonic</span><span class="marca-item">Gree</span><span class="marca-item">Hisense</span><span class="marca-item">TCL</span><span class="marca-item">Kendal</span><span class="marca-item">Trane</span><span class="marca-item">Bacold</span>
+    </div>
+  </div>
+</div>
+
+<section class="asistente" id="asistente">
+  <div class="wrap asis-grid">
+    <div class="asis-intro reveal">
+      <span class="eyebrow">Asistente Urtubia</span>
+      <h2>¿Qué le pasa a tu equipo? Averigüémoslo juntos.</h2>
+      <p>Responde unas preguntas simples y el asistente te orienta al instante qué puede tener tu lavadora, refrigerador o aire. Luego Don Manuel te contacta para resolverlo en persona.</p>
+      <div class="mini-feats">
+        <div class="mf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M8 12l2.5 2.5L16 9"/></svg>Diagnóstico orientativo en segundos, gratis.</div>
+        <div class="mf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>Te dice causas probables y qué esperar.</div>
+        <div class="mf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.6 6.3A7.9 7.9 0 0 0 12 4a8 8 0 0 0-6.9 12l-1 3.7 3.8-1A8 8 0 0 0 12 20a8 8 0 0 0 5.6-13.7z"/></svg>Manuel recibe tu caso y te contacta.</div>
+      </div>
+    </div>
+    <div class="chat-box reveal">
+      <div class="chat-top">
+        <div class="chat-avatar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M8 12l2.5 2.5L16 9"/></svg>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <div class="ct-name">Asistente Urtubia</div>
+          <div class="ct-status">En línea · te orienta al toque</div>
+        </div>
+      </div>
+      <div class="chat-body" id="chatBody"></div>
+      <div class="chat-options" id="chatOptions"></div>
+      <div class="chat-input-row" id="chatInputRow" style="display:none">
+        <input type="text" id="chatInput" placeholder="Escribe aquí...">
+        <button class="chat-send" id="chatSend"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="servicios" id="servicios">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Lo que resuelve</span>
+      <h2>Un solo técnico de confianza para todo lo que enfría.</h2>
+      <p>Instalación, mantención y reparación. Para la casa, la oficina o el negocio.</p>
+    </div>
+    <div class="serv-grid">
+      <div class="serv reveal">
+        <div class="serv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.5 2.5M16.5 16.5L19 19M19 5l-2.5 2.5M7.5 16.5L5 19"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h3>Aire acondicionado</h3>
+        <p>Split, muro, cassette y centrales. Instalación, carga de gas, mantención y reparación.</p>
+        <div class="tags"><span class="tag">Instalación</span><span class="tag">Carga de gas</span><span class="tag">Mantención</span></div>
+      </div>
+      <div class="serv reveal">
+        <div class="serv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M5 11h14M9 6h.01M9 15h.01"/></svg></div>
+        <h3>Refrigeración</h3>
+        <p>Refrigeradores de hogar, cámaras de frío, vitrinas y congeladoras. Urgencias cuando la mercadería está en juego.</p>
+        <div class="tags"><span class="tag">Refrigeradores</span><span class="tag">Cámaras de frío</span><span class="tag">Vitrinas</span></div>
+      </div>
+      <div class="serv reveal">
+        <div class="serv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="2" width="16" height="20" rx="2"/><circle cx="12" cy="14" r="4"/><path d="M8 6h.01M12 6h.01"/></svg></div>
+        <h3>Línea blanca</h3>
+        <p>Lavadoras, secadoras y refrigeradores. Le decimos con honestidad si conviene reparar o cambiar, y qué repuesto usar.</p>
+        <div class="tags"><span class="tag">Lavadoras</span><span class="tag">Secadoras</span><span class="tag">Repuestos</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="confianza" id="confianza">
+  <div class="wrap conf-grid">
+    <div class="conf-photo reveal">
+      <img src="manuel_hero.png" alt="Don Manuel Urtubia, técnico de Urtubia Clima">
+    </div>
+    <div class="conf-text reveal">
+      <span class="eyebrow">Quién está detrás</span>
+      <h2>Un oficio de familia, más de 30 años en la calle.</h2>
+      <p><strong>Don Manuel es un técnico de los de antes</strong>: observador, detallista, de los que escuchan el ruido y ya saben por dónde va la cosa. No vende lujo ni promesas — vende algo más difícil de encontrar: saber de verdad lo que hace.</p>
+      <p>Conoce cada marca y sistema, maneja <strong>alternativas de repuestos</strong> para ajustarse a su bolsillo, y le da <strong>tiempos claros</strong> sin dar vueltas. Y siempre atiende él, en persona.</p>
+      <div class="conf-nums">
+        <div class="cnum"><div class="cn">+30</div><div class="cl">Años de oficio</div></div>
+        <div class="cnum"><div class="cn">+1.000</div><div class="cl">Clientes atendidos</div></div>
+        <div class="cnum"><div class="cn">100%</div><div class="cl">Trabajo garantizado</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="extra" id="extra">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Consulte además por</span>
+      <h2>Soluciones para empresas y proyectos mayores.</h2>
+      <p>Más allá del servicio a domicilio, Urtubia Clima cubre requerimientos de mayor escala. Consulte disponibilidad para su caso.</p>
+    </div>
+    <div class="extra-grid">
+      <div class="xcard reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg><div><h3>Venta de maquinaria</h3><p>Equipos de climatización y refrigeración, asesorados según su necesidad.</p></div></div>
+      <div class="xcard reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h18M3 12l4-4M3 12l4 4M21 6v12"/></svg><div><h3>Arriendo de equipos</h3><p>Climatización temporal para eventos, obras o temporadas altas.</p></div></div>
+      <div class="xcard reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg><div><h3>Instalaciones para empresas</h3><p>Proyectos de climatización para oficinas, locales y condominios.</p></div></div>
+      <div class="xcard reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg><div><h3>Refrigeración de camiones</h3><p>Revisión y mantención de equipos de frío para transporte refrigerado.</p></div></div>
+      <div class="xcard reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2s5 4 5 9a5 5 0 0 1-10 0c0-5 5-9 5-9z"/><path d="M8 20h8"/></svg><div><h3>Limpieza a vapor</h3><p>Higienización profunda de equipos y ductos, sin químicos agresivos.</p></div></div>
+      <div class="xcard reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v12H4zM2 20h20M9 9l2 2 4-4"/></svg><div><h3>Mantención programada</h3><p>Contratos con visitas periódicas e informe técnico para su empresa.</p></div></div>
+    </div>
+    <div class="extra-cta reveal">
+      <a href="https://wa.me/56967149945?text=Hola%20Urtubia%20Clima,%20quiero%20consultar%20por%20servicios%20para%20empresa" class="btn btn-primary">Consultar por mi proyecto</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="wrap">
+    <div class="cta-box reveal">
+      <h2>Hagamos que su equipo funcione bien.</h2>
+      <p>Escríbanos por WhatsApp o use el asistente. Don Manuel atiende su caso personalmente.</p>
+      <div class="hero-cta">
+        <a href="https://wa.me/56967149945?text=Hola%20Urtubia%20Clima,%20necesito%20ayuda%20con%20un%20equipo" class="btn btn-white">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.3A7.9 7.9 0 0 0 12 4a8 8 0 0 0-6.9 12l-1 3.7 3.8-1A8 8 0 0 0 12 20a8 8 0 0 0 5.6-13.7zM12 18.5c-1.2 0-2.4-.3-3.4-.9l-.2-.1-2.5.7.7-2.4-.2-.3A6.5 6.5 0 1 1 12 18.5z"/></svg>
+          Escribir por WhatsApp
+        </a>
+      </div>
+      <div class="contacto-row">
+        <a href="tel:+56967149945" class="cchip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.5-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg>+56 9 6714 9945</a>
+        <a href="mailto:contacto@urtubiaclima.cl" class="cchip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>contacto@urtubiaclima.cl</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="uc.png" alt="Urtubia Clima">
+        <p>Especialistas en climatización y refrigeración. Más de 30 años de oficio al servicio de hogares y empresas de Santiago.</p>
+        <div class="socials">
+          <a href="https://instagram.com/urtubiaclima" aria-label="Instagram" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://tiktok.com/@urtubiaclima" aria-label="TikTok" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 3v3.3a5.7 5.7 0 0 0 4 1.4v3.1a8.6 8.6 0 0 1-4-1v5.5a5.8 5.8 0 1 1-5.8-5.8c.3 0 .6 0 .9.1v3.2a2.6 2.6 0 1 0 1.8 2.5V3z"/></svg></a>
+          <a href="https://wa.me/56967149945" aria-label="WhatsApp" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.3A7.9 7.9 0 0 0 12 4a8 8 0 0 0-6.9 12l-1 3.7 3.8-1A8 8 0 0 0 12 20a8 8 0 0 0 5.6-13.7z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Servicios</h4>
+        <a href="#servicios">Aire acondicionado</a>
+        <a href="#servicios">Refrigeración</a>
+        <a href="#servicios">Línea blanca</a>
+        <a href="#extra">Empresas y proyectos</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contacto</h4>
+        <a href="https://wa.me/56967149945" class="ico-line"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.3A7.9 7.9 0 0 0 12 4a8 8 0 0 0-6.9 12l-1 3.7 3.8-1A8 8 0 0 0 12 20a8 8 0 0 0 5.6-13.7z"/></svg>+56 9 6714 9945</a>
+        <a href="mailto:contacto@urtubiaclima.cl" class="ico-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>contacto@urtubiaclima.cl</a>
+        <a href="https://instagram.com/urtubiaclima" class="ico-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg>@urtubiaclima</a>
+        <p class="ico-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.7-7-11a7 7 0 0 1 14 0c0 4.3-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Santiago · A domicilio</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Urtubia Clima. Todos los derechos reservados.</span>
+      <span>La experiencia no se improvisa.</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/56967149945?text=Hola%20Urtubia%20Clima,%20necesito%20una%20cotización" class="wsp-float" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.3A7.9 7.9 0 0 0 12 4a8 8 0 0 0-6.9 12l-1 3.7 3.8-1A8 8 0 0 0 12 20a8 8 0 0 0 5.6-13.7zM12 18.5c-1.2 0-2.4-.3-3.4-.9l-.2-.1-2.5.7.7-2.4-.2-.3A6.5 6.5 0 1 1 12 18.5zm3.6-4.9c-.2-.1-1.2-.6-1.4-.6-.2-.1-.3-.1-.5.1-.1.2-.5.6-.6.8-.1.1-.2.1-.4 0-.2-.1-.9-.3-1.7-1-.6-.6-1-1.2-1.2-1.4-.1-.2 0-.3.1-.4l.3-.4.2-.3v-.4c0-.1-.5-1.2-.7-1.6-.2-.4-.3-.4-.5-.4h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.2-.5 1.4-1 .2-.5.2-.9.1-1z"/></svg>
+</a>
+
+<script>
+  const header=document.getElementById('header');
+  window.addEventListener('scroll',()=>header.classList.toggle('scrolled',window.scrollY>40));
+  const burger=document.getElementById('burger'),navlinks=document.getElementById('navlinks');
+  burger.addEventListener('click',()=>{burger.classList.toggle('open');navlinks.classList.toggle('open')});
+  navlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{burger.classList.remove('open');navlinks.classList.remove('open')}));
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0.1});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  const mtrack=document.getElementById('mtrack');mtrack.innerHTML+=mtrack.innerHTML;
+  const wind=document.getElementById('wind');
+  for(let i=0;i<14;i++){const s=document.createElement('span');s.style.top=(Math.random()*100)+'%';s.style.width=(80+Math.random()*180)+'px';s.style.animationDuration=(6+Math.random()*8)+'s';s.style.animationDelay=(Math.random()*8)+'s';wind.appendChild(s)}
+  const heroEl=document.querySelector('.hero');
+  const flakeSvg='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M4.9 4.9l14.2 14.2M2 12h20M4.9 19.1L19.1 4.9"/></svg>';
+  for(let i=0;i<8;i++){const f=document.createElement('div');f.className='flake';f.innerHTML=flakeSvg;f.style.left=(Math.random()*100)+'%';const sz=10+Math.random()*16;f.querySelector('svg').setAttribute('width',sz);f.querySelector('svg').setAttribute('height',sz);f.style.animationDuration=(13+Math.random()*10)+'s';f.style.animationDelay=(Math.random()*13)+'s';heroEl.appendChild(f)}
+
+  /* ===== ASISTENTE URTUBIA ===== */
+  const body=document.getElementById('chatBody'),opts=document.getElementById('chatOptions'),inputRow=document.getElementById('chatInputRow'),input=document.getElementById('chatInput'),sendBtn=document.getElementById('chatSend');
+  let flow={equipo:null,sintoma:null,nombre:null,comuna:null};
+  function botMsg(html,cb){const t=document.createElement('div');t.className='typing';t.innerHTML='<span></span><span></span><span></span>';body.appendChild(t);body.scrollTop=body.scrollHeight;setTimeout(()=>{t.remove();const m=document.createElement('div');m.className='msg bot';m.innerHTML=html;body.appendChild(m);body.scrollTop=body.scrollHeight;if(cb)setTimeout(cb,400)},800)}
+  function userMsg(txt){const m=document.createElement('div');m.className='msg user';m.textContent=txt;body.appendChild(m);body.scrollTop=body.scrollHeight}
+  function setOptions(list){opts.innerHTML='';list.forEach(o=>{const b=document.createElement('button');b.className='chip-opt';b.textContent=o.label;b.onclick=()=>o.action(o.label);opts.appendChild(b)})}
+  function clearOptions(){opts.innerHTML=''}
+  function showInput(ph,onSend){inputRow.style.display='flex';input.placeholder=ph;input.value='';input.focus();const h=()=>{const v=input.value.trim();if(!v)return;userMsg(v);inputRow.style.display='none';sendBtn.onclick=null;input.onkeydown=null;onSend(v)};sendBtn.onclick=h;input.onkeydown=e=>{if(e.key==='Enter')h()}}
+  const diag={
+    refrigerador:{'No enfría':'Cuando un refri deja de enfriar, casi siempre es una de tres: el <strong>gas bajo</strong>, el <strong>motor (compresor)</strong> cansado, o el <strong>sistema tapado con escarcha</strong>. Se ve rápido midiendo presiones. Muchas veces tiene arreglo sin cambiar el equipo.','Hace ruido':'Un refri ruidoso suele ser el <strong>ventilador rozando</strong> o el <strong>compresor forzado</strong>. Si vibra fuerte, mejor revisarlo pronto — a veces es solo un apoyo suelto, barato de arreglar.','Junta agua / escarcha':'El agua o la escarcha casi siempre es un <strong>desagüe tapado</strong> o el <strong>deshielo fallando</strong>. Es de las reparaciones más agradecidas: queda como nuevo.','Otro problema':'Cuéntame en tus palabras qué hace tu refri y Don Manuel lo revisa con calma.'},
+    lavadora:{'No centrifuga':'Cuando no centrifuga, lo típico es la <strong>correa</strong>, el <strong>sensor de tapa</strong> o la <strong>bomba tapada</strong>. La ropa queda mojada porque no bota el agua. Suele ser reparable el mismo día.','No carga agua':'Si no entra agua, revisamos la <strong>entrada</strong>, el <strong>filtro de la válvula</strong> (se tapa con sarro) o la <strong>válvula misma</strong>. Falla frecuente y económica.','Bota agua / gotea':'Una lavadora que gotea suele tener una <strong>manguera suelta</strong>, el <strong>sello de puerta gastado</strong> o la <strong>bomba con fuga</strong>. Mejor verlo pronto.','Otro problema':'Cuéntame qué hace tu lavadora y lo vemos.'},
+    secadora:{'No calienta':'Si gira pero no seca, casi siempre es la <strong>resistencia</strong> o el <strong>termostato</strong>. La ropa sale húmeda y tibia. Reparación directa.','No gira':'Cuando el tambor no gira, lo común es la <strong>correa cortada</strong> o el <strong>motor</strong>. La correa es económica y se cambia rápido.','Huele a quemado':'Ojo — apáguela. El olor a quemado suele ser <strong>pelusa acumulada</strong> o un <strong>componente forzado</strong>. Revísela pronto por seguridad.','Otro problema':'Cuéntame qué le pasa a tu secadora.'},
+    aire:{'No enfría':'Un aire que no enfría casi siempre tiene el <strong>gas bajo</strong> (micro-fuga), el <strong>filtro sucio</strong> o el <strong>condensador tapado</strong>. Una mantención con carga de gas suele dejarlo como nuevo.','Gotea agua':'El goteo casi siempre es el <strong>desagüe tapado</strong> — común y rápido de arreglar. Si gotea hacia adentro, mejor verlo antes de que manche el muro.','Hace ruido / mal olor':'El ruido suele ser el <strong>ventilador</strong> y el mal olor son <strong>hongos en el filtro</strong>. Una limpieza profunda (ideal a vapor) lo deja limpio y silencioso.','Instalación nueva':'¡Perfecto! Te asesoramos qué equipo conviene según el tamaño de la pieza y lo dejamos funcionando prolijo. Te paso a cotizar.'}
+  };
+  const equipos=[{label:'❄️ Refrigerador',key:'refrigerador'},{label:'🌀 Lavadora',key:'lavadora'},{label:'🔥 Secadora',key:'secadora'},{label:'💨 Aire acondicionado',key:'aire'}];
+  function start(){body.innerHTML='';clearOptions();inputRow.style.display='none';flow={equipo:null,sintoma:null,nombre:null,comuna:null};
+    botMsg('¡Hola! 👋 Soy el <strong>Asistente Urtubia</strong>. En un minuto te oriento qué puede tener tu equipo y le paso tu caso a Don Manuel.',()=>{
+      botMsg('¿Con qué equipo necesitas ayuda?',()=>{setOptions(equipos.map(e=>({label:e.label,action:()=>pickEquipo(e)})))})})}
+  function pickEquipo(e){userMsg(e.label);clearOptions();flow.equipo=e.key;const s=Object.keys(diag[e.key]);
+    botMsg('Buena. ¿Qué es lo que está pasando?',()=>{setOptions(s.map(x=>({label:x,action:()=>pickSintoma(x)})))})}
+  function pickSintoma(s){userMsg(s);clearOptions();flow.sintoma=s;
+    botMsg(diag[flow.equipo][s],()=>{botMsg('Esto es orientativo — <strong>Don Manuel lo confirma revisándolo en persona</strong>. ¿Te dejo agendado para que te contacte?',()=>{
+      setOptions([{label:'Sí, quiero que me contacten',action:()=>askNombre()},{label:'Prefiero escribir por WhatsApp',action:()=>toWhatsapp()}])})})}
+  function askNombre(){userMsg('Sí, quiero que me contacten');clearOptions();botMsg('¡Genial! ¿Cómo te llamas?',()=>{showInput('Tu nombre...',v=>{flow.nombre=v;askComuna()})})}
+  function askComuna(){botMsg('Un gusto, <strong>'+flow.nombre+'</strong>. ¿En qué comuna estás?',()=>{showInput('Tu comuna...',v=>{flow.comuna=v;finish()})})}
+  function labelEquipo(){return equipos.find(e=>e.key===flow.equipo).label.replace(/[^0-9A-Za-zÁÉÍÓÚáéíóúÑñ ]/g,'').trim()}
+  function finish(){botMsg('¡Listo, '+flow.nombre+'! Ya tengo tu caso: <strong>'+labelEquipo()+'</strong> con "<strong>'+flow.sintoma+'</strong>" en <strong>'+flow.comuna+'</strong>. Toca el botón y le llega directo a Don Manuel. Él te contacta para coordinar. 🔧',()=>{
+      const txt='Hola Urtubia Clima! Soy '+flow.nombre+' de '+flow.comuna+'. Mi '+labelEquipo().toLowerCase()+' tiene: '+flow.sintoma+'. Quiero coordinar una visita.';
+      const url='https://wa.me/56967149945?text='+encodeURIComponent(txt);opts.innerHTML='';
+      const b=document.createElement('button');b.className='chip-opt';b.style.background='var(--verde)';b.style.borderColor='var(--verde)';b.style.color='#fff';b.style.fontWeight='700';b.innerHTML='📲 Enviar mi caso a Don Manuel';b.onclick=()=>window.open(url,'_blank');opts.appendChild(b);
+      const r=document.createElement('button');r.className='chip-opt';r.textContent='↺ Empezar de nuevo';r.onclick=start;opts.appendChild(r)})}
+  function toWhatsapp(){userMsg('Prefiero escribir por WhatsApp');clearOptions();
+    const txt='Hola Urtubia Clima! Mi '+labelEquipo().toLowerCase()+' tiene: '+flow.sintoma+'. Quiero coordinar una visita.';
+    const url='https://wa.me/56967149945?text='+encodeURIComponent(txt);
+    botMsg('¡Perfecto! Toca aquí y hablas directo con Don Manuel 👇',()=>{
+      const b=document.createElement('button');b.className='chip-opt';b.style.background='var(--verde)';b.style.borderColor='var(--verde)';b.style.color='#fff';b.style.fontWeight='700';b.innerHTML='📲 Abrir WhatsApp';b.onclick=()=>window.open(url,'_blank');opts.appendChild(b);
+      const r=document.createElement('button');r.className='chip-opt';r.textContent='↺ Empezar de nuevo';r.onclick=start;opts.appendChild(r)})}
+  const asisIO=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){start();asisIO.disconnect()}}),{threshold:0.3});
+  asisIO.observe(document.getElementById('asistente'));
+</script>
+</body>
+</html>
